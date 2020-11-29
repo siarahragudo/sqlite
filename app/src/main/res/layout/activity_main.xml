@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff00"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="STUDENT RECORD"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Student ID"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id"
+        android:layout_marginTop="0dp"
+        android:hint="Student Name"
+        android:inputType="textPersonName"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="0dp"
+        android:hint="Address"
+        android:inputType="textPersonName"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btninsert"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:text="ADD RECORD"
+        android:layout_below="@id/address"
+        />
+
+    <Button
+        android:id="@+id/btndelete"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="150dp"
+        android:text="DELETE RECORD"
+        android:layout_below="@id/address"
+        />
+
+    <Button
+        android:id="@+id/btnupdate"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="270dp"
+        android:text="UPDATE"
+        android:layout_below="@id/address"
+        />
+
+    <Button
+        android:id="@+id/btnview"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="150dp"
+        android:text="VIEW ALL RECORD"
+        android:layout_below="@id/btndelete"
+        />
+
+
+</RelativeLayout>
